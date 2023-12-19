@@ -1,0 +1,10 @@
+[package]
+name = "ExchangeFaucet"
+version = '1.0.0'             # Per SemVer
+upgrade_policy = 'compatible'
+
+[addresses]
+exchange_faucet = "_"
+
+[dependencies.Econia]
+local = "../econia"

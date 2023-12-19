@@ -1,0 +1,28 @@
+[package]
+name = "Manager"
+version = '1.0.0'             
+upgrade_policy = 'compatible'
+
+[addresses]
+exchange_faucet = "_"
+econia = "_"
+manager = "_"
+
+[dependencies.MoveStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/move-stdlib/'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework/'
+
+[dependencies.AptosStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-stdlib/'
+
+[dependencies.ExchangeFaucet]
+local = "../faucet"
+

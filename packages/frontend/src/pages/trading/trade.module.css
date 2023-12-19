@@ -1,0 +1,561 @@
+.trade {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: scroll;
+}
+
+.trade * {
+    color: var(--body_color);
+}
+
+.tradea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: .3rem;
+}
+
+.tradeb {
+    display: flex;
+    flex-direction: row;
+    height: calc(90vh - 3rem);
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.tradeba {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 78%;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.tradebaa {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 99.5%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+/* ================= AA ================================ */
+
+.tradeaa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+
+.tradeaa a {
+    border: 1px solid var(--tradeaa-border-color);
+    width: 30%;
+    height: 80%;
+    margin: 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.tradeaa .aaactive {
+    background-color: var(--button-background_color);
+    font-size: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tradeaa .aainactive {
+    font-size: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.tradebaaa_tradingblock {
+    height: 108%;
+    width: 100%;
+    margin-top: 0.4rem;
+    overflow: hidden;
+    border-radius: 0rem;
+}
+
+
+
+/* ======================AB=========================== */
+.tradeab {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 4px;
+}
+
+.tradeab .blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .3rem 0 0 0;
+}
+
+.tradeab .blocks :first-child {
+    font-size: .7rem;
+    font-weight: 200;
+    color: var(--body_color);
+}
+
+.tradeab .blocks :last-child {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.tradeab .data32 {
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+/* ====================== BB ============================ */
+.tradebb {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 1rem 0;
+}
+
+.tradebb .buysell {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: var(--button-background_color);
+    border-radius: 1rem;
+    margin: 1rem 5% .5rem 5%;
+    position: relative;
+}
+
+.tradebb .buysell div {
+    font-size: 1rem;
+    height: 100%;
+    width: 50%;
+    padding: .8rem 0;
+    text-align: center;
+    transition: all .15s ease-in-out;
+    transition-delay: .15s;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.tradebb .buysell span {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    border-radius: 1rem;
+    padding: .5rem 0;
+    top: 0;
+    transition: all .3s ease-in-out;
+}
+
+.buyactive {
+    color: rgb(0, 255, 0);
+    ;
+}
+
+.sellactive {
+    color: red;
+}
+
+.hoverbuy {
+    background-color: var(--tradebb-background-buy_color);
+    left: 0;
+    border: 1px solid rgb(0, 255, 0);
+}
+
+.hoversell {
+    background-color: var(--tradebb-background-sell_color);
+    left: 50%;
+    border: 1px solid red;
+}
+
+.marketlimit {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--button-background_color);
+    width: 80%;
+    border-radius: .5rem;
+    margin: 1rem 10% 1.3rem 10%;
+    position: relative;
+}
+
+.marketlimit div {
+    height: 100%;
+    padding: .5rem 0;
+    font-size: .9rem;
+    width: 50%;
+    text-align: center;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.marketlimit span {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    border-radius: .5rem;
+    padding: .5rem 0;
+    top: 0;
+    background-color: var(--button-background_color);
+    transition: all .3s ease-in-out;
+    left: 50%;
+}
+
+.marketlimit .hoverleft {
+    left: 0%;
+}
+
+
+.formcontent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.formcontent>input {
+    width: 100%;
+    height: 2.5rem;
+    margin: 0;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--tradebb-formcontent_color);
+    border: 1px solid var(--button-background_color);
+    color: var(--body_color);
+    font-size: .9rem;
+    font-weight: 200;
+    margin-bottom: .5rem;
+}
+
+.formcontent>input::placeholder {
+    color: var(--tradebb-formcontent_color);
+}
+
+.formcontent>input:focus {
+    outline: none;
+}
+
+.formcontent>label,
+.leverage>label {
+    font-size: .8rem;
+    font-weight: 200;
+    color: var(--body_color);
+    margin-bottom: .5rem;
+}
+
+.sideconnect,
+.sideconnected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem 0;
+    color: rgb(76, 215, 244);
+    width: 95%;
+    margin: 0 2.5%; 
+    background-color: rgba(76, 215, 244, 0.04);
+    border-radius: .3rem;
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+
+.bbsideconnectdiv, .babsideconnectdiv{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.babsideconnectdiv{
+    width: 40%;
+    margin: 0 30%;
+}
+
+.sideconnect2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem 0;
+    color: rgb(76, 215, 244);
+    width: 95%;
+    background-color: rgba(76, 215, 244, 0.04);
+    position: absolute;
+    bottom: 5%;
+    left: 2.5%;
+    border-radius: .3rem;
+}
+
+
+.sideconnected {
+    color: var(--body_color);
+    background-color: var(--sideconnected_color);
+    border: 1px solid var(--sideconnected-border_color);
+}
+
+.sideconnected:hover {
+    border: 1px solid var(--sideconnected-border_color);
+
+}
+
+.leverage div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.leverage div input[type="range"] {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 1rem;
+    background-color: var(--tradebb-formcontent_color);
+    border-radius: 1rem;
+    outline: none;
+    margin: .5rem 0;
+}
+
+.leverage div input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(76, 215, 244);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -.5rem;
+}
+
+.leverage div input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(76, 215, 244);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -.5rem;
+}
+
+.leverage div input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(76, 215, 244);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -.5rem;
+}
+
+.leverage div input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1rem;
+    border-radius: 1rem;
+}
+
+.leverage div input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 1rem;
+    border-radius: 1rem;
+}
+
+.leverage div input[type="range"]::-ms-track {
+    width: 100%;
+    height: 1rem;
+    border-radius: 1rem;
+}
+
+.leverage div input[type="integer"] {
+    width: 15%;
+    height: 2.5rem;
+    margin: 0 .1rem 0 0;
+    padding: 0 .3rem;
+    border-radius: 1rem;
+    background-color: var(--input_background_color);
+    border: 1px solid var(--input_border_color);
+    color: var(--body_color);
+    font-size: .9rem;
+    font-weight: 200;
+    margin-bottom: .5rem;
+}
+
+/* ==============BAAB================================== */
+
+.Tradebaab {
+    height: 98%;
+    width: 25%;
+    padding-top: 1.3vw;
+    background-color: var(--orderbook_background_color);
+    margin-top: 0.5%;
+    border-radius: 0.7rem;
+    margin-left: 0.5%;
+    overflow: scroll;
+    box-shadow: 1px 1px 5px 0 black;
+    overflow: hidden;
+}
+
+.tradebaab_order {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    color: var(--body_color);
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: .1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td,
+.table th {
+    padding: 0.5rem;
+    padding-left: 2%;
+    text-align: center;
+}
+
+.table th {
+    font-size: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    /* color: var(--table-header_color); */
+}
+
+.table td {
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--body_color);
+}
+
+.table tr {
+    position: relative;
+}
+
+.redorderbg,
+.greenorderbg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.greenorderbg {
+    background-color: rgba(0, 255, 0, .1);
+}
+
+.redorderbg {
+    background-color: rgba(255, 0, 0, .1);
+}
+
+
+
+/* ======= bab ========== */
+.table {
+    color: var(--table-header_color);
+}
+
+.tradebab_table_data {
+    padding-left: 1rem;
+}
+
+
+.tradebab div thead tr th {
+    padding-left: 4.5rem;
+}
+
+.tradebab_table_data tr td {
+    padding-left: 4.6rem;
+}
+
+
+.tradebab .positiongreen {
+    color: #08D205;
+    width: 100%;
+}
+
+.tradebab .positionred {
+    color: red;
+    width: 100%;
+}
+.tabss {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px
+}
+
+.tabss Button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 1% 1%;
+    /* Increased padding */
+    font-size: 16px;
+    /* Larger font size */
+    color: white;
+    transition: color 0.3s;
+    border-radius: 0.7rem;
+    margin-top: 1%;
+}
+
+.tabss .activeTab {
+    color: rgb(76, 215, 244);
+    border: 1.5px solid rgb(76, 215, 244);
+    border-radius: 0.7rem;
+    background-color: black;
+}
+
+.trademobile{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trademobile div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tradema{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: .3rem;
+}
+
+@media (max-width : 700px){
+    .tradema{
+        flex-direction: column;
+    }
+    
+}

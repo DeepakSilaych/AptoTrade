@@ -1,0 +1,7 @@
+aiokafka==0.9.0
+fastapi==0.104.1
+fastapi_limiter==0.1.5
+jsonrpcserver==5.0.9
+kafka-python>=2.0.0
+Requests==2.31.0
+uvicorn==0.24.0.post1

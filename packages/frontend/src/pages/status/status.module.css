@@ -1,0 +1,202 @@
+.container{
+    width: 80%;
+    margin: 0 10%;
+}
+
+.head{
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+    height: 10rem;
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem 0;    
+}
+
+@keyframes glowgreen{
+    0%,20%,50%,80%,100%{
+        text-shadow: 0 0 0px #00ff00;
+    }
+    40%,60%{
+        text-shadow: 0 0 3px #00ff00;
+    }
+
+}
+
+@keyframes glowred{
+    0%,20%,50%,80%,100%{
+        text-shadow: 0 0 0px #ff0000;
+    }
+    45%,60%{
+        text-shadow: 0 0 3px #ff0000;
+    }
+
+}
+
+.operational span{
+    color: #00ff00;
+    animation: glowgreen 3s ease-in-out infinite;
+}
+
+.notoperational span{
+    color: #ff0000;
+    animation: glowred 3s ease-in-out infinite;
+}
+
+h2{
+    font-size: 1rem;
+    width: 100%;
+    text-align: right; 
+    font-weight: 400;
+    word-spacing: -.1rem;
+    color: rgba(0, 0, 0, .5);
+    margin: 5% 0 .3rem 0;
+
+}
+
+.timelinecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.timelineblock{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+.timelineblock h3{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: rgba(0, 0, 0,1);
+}
+
+.timeline{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timelinebar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+.timelinebar span{
+    width: 30%;
+    text-align: center;
+    font-size: .8rem;
+    color: rgba(0, 0, 0, .5);   
+}
+
+.timelinebar hr{
+    height: .05rem;
+    width: 200%;        
+    border-top: 1px solid rgba(0, 0, 0, .2) ;
+}
+
+.statusDiv {
+    margin: .1rem;
+    position: relative;
+    cursor: pointer;
+    height: 3rem;
+    width: .5rem;
+}
+
+.statusDiv .colorGrey, .statusDiv .colorLime, .statusDiv .colorRed{
+    width: 100%;
+    height: 100%;
+    border-radius: .3rem;
+}
+
+
+.colorGrey {
+background-color: rgba(0, 0, 0, .2);
+}
+
+.colorLime {
+background-color: lime;
+}
+
+.colorRed {
+background-color: red;
+}
+
+.statusDiv:hover .colorGrey, .statusDiv:hover .colorLime, .statusDiv:hover .colorRed{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.hoverContent {
+display: none;
+position: absolute;
+top: 110%; 
+left: 50%; 
+transform: translateX(-50%);
+width: 20vw;
+background-color: rgba(255, 255, 255, 0.9); /* Adjust the background color and opacity based on your design */
+border: 1px solid #ccc; /* Add border for better visibility */
+}
+
+.statusDiv:hover .hoverContent {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.day {
+font-weight: bold;
+}
+
+.description {
+margin-top: 5px;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 10rem 0 00;
+    color: rgba(0, 0, 0,1);
+}
+
+ul{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.statuslist{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.statuslist .listday{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.statuslist hr{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .2) ;
+}
+
+.statuslist .listdescription{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .5);
+    margin: 0;
+}

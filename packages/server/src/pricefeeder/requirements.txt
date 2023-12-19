@@ -1,0 +1,3 @@
+loguru==0.7.2
+pythclient==0.1.17
+Requests==2.31.0

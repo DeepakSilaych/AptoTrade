@@ -1,0 +1,58 @@
+---
+compiled_package_info:
+  package_name: Manager
+  address_alias_instantiation:
+    Extensions: "0000000000000000000000000000000000000000000000000000000000000001"
+    aptos_framework: "0000000000000000000000000000000000000000000000000000000000000001"
+    aptos_std: "0000000000000000000000000000000000000000000000000000000000000001"
+    aptos_token: "0000000000000000000000000000000000000000000000000000000000000003"
+    core_resources: 000000000000000000000000000000000000000000000000000000000a550c18
+    econia: a6bedd813980b9dcf209cab78c11a308c6f79eedf9552d9c64f323f9d8699235
+    exchange_faucet: 607f89bdf3f51099cec5120355267726994247b7b1cc5d28f14fc4e48d426a8f
+    integrator: "0000000000000000000000000000000000000000000000000000000000004567"
+    manager: 73e62cfd8c122d05c4b54c2cc98f0926aaf24c9bad30f104b5232bb8c6eaad63
+    std: "0000000000000000000000000000000000000000000000000000000000000001"
+    user: "0000000000000000000000000000000000000000000000000000000000001234"
+    user_0: "0000000000000000000000000000000000000000000000000000000000002345"
+    user_1: "0000000000000000000000000000000000000000000000000000000000003456"
+    vm_reserved: "0000000000000000000000000000000000000000000000000000000000000000"
+  source_digest: 0250E7F27848C2DE448D85E8EBF37ACF3AC0F777A1E450461425C19065B0D1B9
+  build_flags:
+    dev_mode: false
+    test_mode: false
+    generate_docs: false
+    generate_abis: false
+    generate_move_model: true
+    full_model_generation: false
+    install_dir: ~
+    force_recompilation: false
+    additional_named_addresses:
+      econia: a6bedd813980b9dcf209cab78c11a308c6f79eedf9552d9c64f323f9d8699235
+      exchange_faucet: 607f89bdf3f51099cec5120355267726994247b7b1cc5d28f14fc4e48d426a8f
+      manager: 73e62cfd8c122d05c4b54c2cc98f0926aaf24c9bad30f104b5232bb8c6eaad63
+    architecture: ~
+    fetch_deps_only: false
+    skip_fetch_latest_git_deps: false
+    compiler_config:
+      bytecode_version: ~
+      known_attributes:
+        - bytecode_instruction
+        - deprecated
+        - event
+        - expected_failure
+        - legacy_entry_fun
+        - native_interface
+        - resource_group
+        - resource_group_member
+        - test
+        - test_only
+        - verify_only
+        - view
+      skip_attribute_checks: true
+      compiler_version: ~
+dependencies:
+  - AptosFramework
+  - AptosStdlib
+  - Econia
+  - ExchangeFaucet
+  - MoveStdlib

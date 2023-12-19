@@ -1,0 +1,360 @@
+:root {
+    --body_background: black;
+    --body_color: white;
+    --link_color: cyan;
+    --text-light_color: rgba(255, 255, 255, 0.4);
+    --div-background_color: rgb(18 18 26);
+    --tradeaa-border-color: rgba(255, 255, 255, .1);
+    --button-background_color: rgba(255, 255, 255, .1);
+    --table-header_color: rgba(255, 255, 255, .5);
+    --tradebb-background-buy_color : rgba(0, 255, 0, .1);
+    --tradebb-background-sell_color: rgba(255, 0, 0, .1);
+    --tradebb-formcontent_color: rgba(255, 255, 255, .05);
+    --sideconnected_color: #19181F;
+    --sideconnected-border_color: black;
+    --orderbook_background_color: #12121A;
+    --chart_color: #12121A;
+    --input_background_color: rgba(255, 255, 255, .05);
+    --input_border_color:  rgba(255, 255, 255, .05);
+    --sidebarbuttonactive_color: rgba(76, 215, 244, 0.04);
+    --equity_text_color: rgb(255, 255, 255, .6);
+    --background_color: rgb(30, 30, 36);
+    --overviewdata_color: white;
+    --portfolio_table_color: rgba(255, 255, 255, .5);
+    --portfolio_last_table_color: rgb(24, 24, 30);
+    --portfoliodata_color: rgb(30, 30, 36);
+    --sideconnected_background_color: rgba(76, 215, 244, 0.04);
+    --sidebutton_color: rgba(255, 255, 255, .5);
+    --sidebarbuttonactive: rgb(76, 215, 244);
+    --sidebutton_hover_color: rgba(255, 255, 255);
+    --sidebuttonactive_icon_color: rgba(76, 215, 244, 1);
+    --footer_utc_color: rgba(255, 255, 255, 0.4);
+    --operation_status_color : #00ff00;
+    --notoperational_color: #ffb4b4;
+    --notoperational_background_color : #ff0000;
+    --operation_color: #daffdae6;
+}
+
+[data-theme = "light"] {
+    --body_background: #fcfcfc;
+    --body_color: rgb(0, 0, 0);
+    --link_color: cyan;
+    --text-light_color: rgba(0 0 0 .4);
+    --div-background_color: #dee4e7;
+    --tradeaa-border-color: rgba(0, 0, 0, 0.331);
+    --button-background_color: rgba(105, 104, 109, 0.331);
+    --table-header_color: rgba(0, 0, 0, 0.331);
+    --tradebb-background-buy_color : rgb(118, 169, 118);
+    --tradebb-background-sell_color: rgb(222, 159, 159);
+    --tradebb-formcontent_color: rgba(105, 104, 109, 0.331);
+    --sideconnected_color: rgba(0, 0, 0, 0.1);
+    --sideconnected-border_color: #19181F;
+    --orderbook_background_color: #dee4e7;
+    --chart_color: #dee4e7;
+    --input_background_color: rgba(113, 21, 21, 0.05);
+    --input_border_color:  rgba(0, 0, 0, 0.05);
+    --sidebarbuttonactive_color: rgba(50, 159, 180, 0.04);
+    --sideconnect_color: rgb(238, 122, 21);
+    --equity_text_color: rgba(0, 0, 0, 0.8);
+    --background_color: rgb(167, 167, 168);
+    --overviewdata_color: black;
+    --portfolio_table_color: black;
+    --portfolio_last_table_color: rgb(167, 167, 168);
+    --portfoliodata_color: rgb(152, 152, 154);
+    --sideconnected_background_color: rgb(167, 167, 168);
+    --sidebutton_color: black;
+    --sidebarbuttonactive: rgb(0, 0, 0);
+    --sidebutton_hover_color: rgb(76, 215, 244);
+    --sidebuttonactive_icon_color: black;
+    --footer_utc_color: black;
+    --operation_color: #0a0c0ae6;
+    --operation_status_color : #006200;
+    --notoperational_color: #3a1b1b;
+    --notoperational_background_color : #bd0a0a;
+}
+
+ [data-theme = "dark"] {
+    --body_background: black;
+    --body_color: white;
+    --link_color: cyan;
+    --text-light_color: rgba(255, 255, 255, 0.4);
+    --div-background_color: rgb(18 18 26);
+    --tradeaa-border-color: rgba(255, 255, 255, .1);
+    --button-background_color: rgba(255, 255, 255, .1);
+    --table-header_color: rgba(255, 255, 255, .5);
+    --tradebb-background-buy_color : rgba(0, 255, 0, .1);
+    --tradebb-background-sell_color: rgba(255, 0, 0, .1);
+    --tradebb-formcontent_color: rgba(255, 255, 255, .05);
+    --sideconnected_color: #19181F;
+    --sideconnected-border_color: black;
+    --orderbook_background_color: #12121A;
+    --chart_color: #12121A;
+    -input_background_color: rgba(255, 255, 255, .05);
+    --input_border_color:  rgba(255, 255, 255, .05);
+    --sidebarbuttonactive_color: rgba(76, 215, 244, 0.04);
+    --sideconnect_color: rgb(76, 215, 244);
+    --equity_text_color: rgb(255, 255, 255, .6);
+    --background_color: rgb(30, 30, 36);
+    --overviewdata_color: white;
+    --portfolio_table_color: rgba(255, 255, 255, .5);
+    --portfolio_last_table_color: rgb(24, 24, 30);
+    --portfoliodata_color: rgb(30, 30, 36);
+    --sideconnected_background_color: rgba(76, 215, 244, 0.04);
+    --sidebutton_color: rgba(255, 255, 255, .5);
+    --sidebarbuttonactive: rgb(76, 215, 244);
+    --sidebutton_hover_color: rgba(255, 255, 255);
+    --sidebuttonactive_icon_color: rgba(76, 215, 244, 1);
+    --footer_utc_color: rgba(255, 255, 255, 0.4);
+    --operation_color: #daffdae6;
+    --operation_status_color : #00ff00;
+    --notoperational_color: #ffb4b4;
+    --notoperational_background_color : #ff0000;
+}
+
+.layout{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(0 0 0); */
+    background-color: var(--body_background);
+    overflow: auto;
+
+}
+
+/* =========== header ================== */
+.tnav {
+    height: 5vh;
+    display: flex;
+    margin-top: .5rem;
+    justify-content: space-between;
+}
+
+.tnav .logo {
+    height: 100%;
+    margin: 0 0 0 1rem;
+}
+
+.tnav .logo img {
+    height: 100%;
+}
+
+.navlink1 {
+    height: 100%;
+    display: flex;
+}
+
+.navlink3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.navlink3 a {
+    /* color: rgba(255, 255, 255, 0.6); */
+    color: var(--body_color);
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 1rem 0 0;
+}
+
+.Navactive {
+    /* color: whitesmoke; */
+    color: var(--text-light_color);
+    font-weight: 600;
+}
+
+.navlink2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 3rem;
+    font-size: 1rem;
+    /* color: white; */
+    color: var(--body_color);
+    text-decoration: none;
+}
+
+.navnums {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+}
+
+.navnum {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem 0 0;
+}
+
+.navnum .head {
+    /* color: rgba(255, 255, 255, 0.4); */
+    color: var(--text-light_color);
+    font-size: 0.8rem;
+}
+
+.tnav .connect {
+    /* background-color: rgb(18 18 26); */
+    background-color: var(--div-background_color);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    border: .5px transparent solid;
+    margin: 0 0 0 1rem;
+    cursor: pointer;
+}
+
+.tnav .connect:hover {
+    border: .5px var(--div-background_color) solid;
+}
+
+/* =========== footer ================== */
+.footer {
+    margin: 0;
+    height: 2vh;
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer a{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
+
+.footer .status{
+    display: flex;
+    align-items: center;
+    width: .4rem;
+    height:.4rem;
+    border-radius: 100%;
+    margin: 0 .3rem 0 0;
+    position: absolute;
+    margin-left: -1rem;
+    top: 40%;
+}
+
+.operational{
+    color: var(--operation_color);
+}
+
+.operational .status{
+    background-color: var(--operation_status_color);
+}
+
+.notoperational{
+    color: var(--notoperational_color);
+}
+
+.notoperational .status{
+    background-color: var(--operation_status_color);
+}
+
+.footer .time{
+    margin-left: 1rem;
+    color: var(--body_color);
+    font-size: .8rem;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 0 1rem 1rem 0;
+    cursor: default;
+}
+
+.footer .time p{
+    margin-left: .5rem;
+    color: var(--footer_utc_color);
+}
+
+
+.dark_mode {
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.dark_mode_label {
+    width: 65px;
+    height: 30px;
+    position: relative;
+    display: block;
+    /* background: #ebebeb; */
+    background: #242424;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+        inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dark_mode_label:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: linear-gradient(180deg, #777, #3a3a3a);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.dark_mode_input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.dark_mode_input:checked + .dark_mode_label {
+    background: #ebebeb;
+}
+.dark_mode_input:checked + .dark_mode_label:after {
+    left: 62px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+}
+.dark_mode_label:active:after {
+    width: 30px;
+}
+
+.dark_mode_label svg {
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    z-index: 100;
+}
+
+.sun {
+    display: flex;
+    margin-left: 5px;
+    fill: #fff;
+    transition: 0.3s;
+}
+.Moon {
+    display: flex;
+    fill: #7e7e7e;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+.dark_mode_input:checked + .dark_mode_label svg.sun {
+    fill: #7e7e7e;
+}
+.dark_mode_input:checked + .dark_mode_label svg.moon {
+    fill: #fff;
+}

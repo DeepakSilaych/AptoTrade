@@ -1,0 +1,10 @@
+apscheduler==3.10.4
+fastapi==0.104.1
+jsonrpcserver==5.0.9
+kafka-python>=2.0.0
+pydantic==2.5.2
+pytz==2023.3.post1
+sortedcontainers==2.4.0
+supabase==2.2.1
+uvicorn==0.24.0.post1
+voluptuous==0.14.1

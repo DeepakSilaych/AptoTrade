@@ -1,0 +1,427 @@
+.layout {
+    background-color: var(--div-background_color);
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.layoutbody {
+    display: flex;
+    height: 93vh;
+}
+
+.layoutcard {
+    height: 100%;
+}
+
+.layoutcard h5 {
+    color: var(--body_color);
+    font-size: .7rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+/* ---------------------------------------------------- */
+
+.pblock {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--div-background_color);
+    border-radius: .7rem;
+    margin: .3rem;
+    position: relative;
+    box-shadow: 1px 1px 5px 0px rgba(0 , 0, 0);
+}
+
+.pblock .container {
+    width: 90%;
+    margin: 0 5%;
+    overflow: scroll;
+}
+
+/*-------------------------------------------------------------*/
+
+.sidebutton {
+    color: var(--sidebutton_color);
+    font-size: 1rem;
+    display: flex;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.sidebarbuttonactive {
+    color: var(--sidebarbuttonactive);
+    background-color: var(--sidebarbuttonactive_color);
+}
+
+.sidebarbuttonactive .sidebuttonicon {
+    border: 1px solid var(--sideconnect_icon_color);
+}
+
+.sidebutton:hover {
+    color: var(--sidebutton_hover_color);
+}
+
+.sidebarbuttonactive:hover {
+    color: rgb(76, 215, 244);
+}
+
+.sidebuttonicon {
+    padding: 0 .2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 0 .5rem;
+    height: 1.7rem;
+    width: 1.5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sidebuttonicon img {
+    height: 2rem;
+    width: 2rem;
+    stroke: whitesmoke;
+}
+
+.sidebuttontext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: .8em;
+}
+
+.sideconnect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem 0;
+    color: var(--sideconnect_color);
+    width: 95%;
+    background-color: rgba(76, 215, 244, 0.04);
+    position: absolute;
+    bottom: 5%;
+    left: 2.5%;
+    border-radius: .3rem;
+}
+
+
+.sideconnected_div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+
+}
+
+.sideconnected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: center;
+    padding: .7rem 0;
+    color: var(--body_color);
+    width: 95%;
+    background-color: var(--background_color);
+    border-radius: .3rem;
+    border: 1px solid #19181F;
+}
+
+.sideconnected:hover {
+    border: 1px solid var(--body_color);
+}
+
+/*--------------------------------------------------------  */
+
+.traddata {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: var(--body_color);
+    border-radius: .5rem;
+    padding: .3rem .5rem;
+    margin: .7rem 0;
+}
+
+.traddatacontent {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem 0 0;
+}
+
+.traddataicon {
+    width: 20%;
+    margin: 0 1rem;
+}
+
+.traddataicon img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.traddatanums {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 1rem 0 0;
+    font-size: .8rem;
+}
+
+.traddatachange {
+    font-size: 0.65rem;
+}
+
+.traddatacontentname {
+    margin-top: .5rem;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+.portfoliooverview {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfoliooverview table {
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfoliooverview h4 {
+    color: var(--body_color);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.portfoliooverview h5 {
+    color: var(--body_color);
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+
+.portfoliooverview tr {
+    display: flex;
+    width: 100%;
+}
+
+.portfoliooverview thead th {
+    color: var(--portfolio_table_color);
+    width: 14%;
+    font-size: .8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.portfoliooverview tr :first-child {
+    width: 17%;
+}
+
+.portfoliooverview tr :last-child {
+    width: 35%;
+}
+
+.portfoliooverview tbody tr {
+    background-color: var(--portfolio_last_table_color);
+    border-radius: .5rem;
+    margin: .5rem 0;
+    padding: .5rem .5rem;
+    width: 100%;
+}
+
+.portfoliooverview tbody td {
+    color: var(--equity_text_color);
+    font-size: .8rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14%;
+}
+
+
+.portfoliooverview .td1 {
+    color: var(--overviewdata_color);
+}
+
+.portfoliooverview tr img {
+    width: 2rem;
+}
+
+.portfoliooverview .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.portfoliooverview .action div {
+    width: 30%;
+    background-color: var(--portfoliodata_color);
+    cursor: pointer;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.portfoliooverview .equity h5 {
+    color: var(--equity_text_color);
+    font-size: .8rem;
+    margin: 1rem 0 .3rem .3rem;
+}
+
+.portfoliooverview .equity>div {
+    display: flex;
+    align-items: center;
+}
+
+.portfoliooverview .equity>div :first-child {
+    color: var(--body_color);
+    font-size: 1.5rem;
+}
+
+.portfoliooverview .equity>div :last-child {
+    margin: 0 .5rem;
+    font-size: 0.8rem;
+
+}
+
+
+
+.overviewdata {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.overviewdata>div {
+    background-color: var(--background_color);
+    width: 20%;
+    padding: .5rem 0 .3rem .5rem;
+    border-radius: .6rem;
+}
+
+.overviewdata>div :first-child {
+    color: var(--overviewdata_color);
+    font-size: .7rem;
+    margin-left: .3rem;
+}
+
+.totalamount{
+    color: black;
+    font-size: 3rem;
+}
+
+.overviewdata>div :last-child {
+    color: var(--body_color);
+    font-size: 1rem;
+    margin-left: .3rem;
+}
+
+.progressbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+    color: var(--table-header_color);
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+h4{
+    color: var(--body_color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+
+
+.tabButton {
+    background-color: #000000;
+    color: grey;
+    border: none;
+    padding: 10px;
+    margin-right:2%;
+    cursor: pointer;
+    border-radius: 0.7rem;
+}
+
+.tabContent p{
+    justify-content: center;
+    text-align: center;
+    margin-top: 30%;
+    font-size: 20px;
+    color: #434242;
+}
+
+.activeTab {
+    border: 1.5px solid rgb(76, 215, 244);
+    border-radius: 0.7rem;
+    color: rgb(76, 215, 244);
+}
+
+
+.portfolio_mobile {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30%;
+    padding: 20%;
+    color: rgb(141, 137, 137);
+    text-align: justify;
+}
+
+.centertable{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.centertable span{
+    color: var(--table-header_color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.centertablebody{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.centertablebody span{
+    color: var(--body_color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.connectyourwallet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
