@@ -15,6 +15,34 @@ AptoTrade is a derivates exchange offering experiable futures, running on Aptos 
 
 
 
+## Screenshots
+
+1. Order List <br>
+<img src="./images/order_list.jpeg" alt="Screenshot" width=700 height=auto>
+
+2. Orderbook <br>
+<img src="./images/orderbook.jpeg" alt="Screenshot" height=700 width=auto>
+
+3. Portfolio Page <br>
+<img src="./images/Portfolio_page.jpeg" alt="Screenshot" width=700 height=auto>
+
+4. Second Home <br>
+<img src="./images/Second_home.jpeg" alt="Screenshot" width=700 height=auto>
+
+5. Trading Home <br>
+<img src="./images/trading_home.jpeg" alt="Screenshot" width=700 height=auto>
+
+6. Trading Page <br>
+<img src="./images/trading_page.jpeg" alt="Screenshot" width=700 height=auto>
+
+7. Wallet <br>
+<img src="./images/wallet.jpeg" alt="Screenshot" height=450 width=auto>
+
+8. White Theme Home Page <br>
+<img src="./images/white_theme_home.jpeg" alt="Screenshot" width=700 height=auto>
+
+
+
 ## Documentation
 
 This repositary contains 3 sections
@@ -408,29 +436,3 @@ ws://127.0.0.1:8082/account/0xe5748e30195c0c4d15f1fed8d1aeffd28d1208740df096f2a7
     }
 }
 ```
-
-## Screenshots
-
-1. Order List <br>
-<img src="./images/order_list.jpeg" alt="Screenshot" width=700 height=auto>
-
-2. Orderbook <br>
-<img src="./images/orderbook.jpeg" alt="Screenshot" height=700 width=auto>
-
-3. Portfolio Page <br>
-<img src="./images/Portfolio_page.jpeg" alt="Screenshot" width=700 height=auto>
-
-4. Second Home <br>
-<img src="./images/Second_home.jpeg" alt="Screenshot" width=700 height=auto>
-
-5. Trading Home <br>
-<img src="./images/trading_home.jpeg" alt="Screenshot" width=700 height=auto>
-
-6. Trading Page <br>
-<img src="./images/trading_page.jpeg" alt="Screenshot" width=700 height=auto>
-
-7. Wallet <br>
-<img src="./images/wallet.jpeg" alt="Screenshot" height=450 width=auto>
-
-8. White Theme Home Page <br>
-<img src="./images/white_theme_home.jpeg" alt="Screenshot" width=700 height=auto>
